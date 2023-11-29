@@ -36,9 +36,9 @@ function Payment() {
                             <h3 className="text-left text-xl border-b-2 font-semibold p-4">Datos del Pedido</h3>
                             <article >
                                 <div className="flex flex-col gap-4 mb-4 p-4">
-                                    <span className="font-semibold">Nombre: </span>
-                                    <span className="font-semibold">Fecha del pedido:###</span>
-                                    <p className="font-semibold">Lugar de Entrega</p>
+                                    <span className="font-semibold"><strong>Nombre:</strong> Primer Cliente</span>
+                                    <span className="font-semibold"><strong>Fecha del pedido:</strong> ###</span>
+
                                 </div>
                                 <h3 className="text-left font-semibold p-4  border-b-4">Resumen del Pedido</h3>
                                 <ul className="">

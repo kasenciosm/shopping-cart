@@ -12,7 +12,7 @@ import { UserContext } from '../context/UserContext'
 function NavBar() {
     const [showNav, setShowNav] = useState(false)
 
-    const closeMenu = () => setShowNav(showNav)
+    const closeMenu = () => setShowNav(!showNav)
 
     const { user, cleanUser } = useContext(UserContext)
     const navigate = useNavigate()
@@ -44,7 +44,8 @@ function NavBar() {
                 />)}
             </div>
             <ul className={(showNav ? 'left-0' : '-left-full') +
-                ' md:static fixed bottom-0 top-16 md:flex md:space-x-9 items-center md:bg-transparent bg-gray-500 bg-opacity-90 md:w-auto w-3/6 md:text-gray-500 text-white md:space-y-0 space-y-5 p-2 transition-left duration-300 '}>
+                ' md:static fixed bottom-0 top-16 md:flex md:space-x-9 items-center md:bg-transparent bg-gray-500 bg-opacity-90 md:w-auto w-3/6 md:text-gray-500 text-white md:space-y-0 space-y-5 p-2 transition-left duration-300 '}
+                onClick={closeMenu}>
                 <NavItem content="Home" href="/home" onClick={closeMenu} />
                 <NavItem content="Tienda" href="/shop" onClick={closeMenu} />
                 <NavItem content="Contacto" href="/contact" onClick={closeMenu} />

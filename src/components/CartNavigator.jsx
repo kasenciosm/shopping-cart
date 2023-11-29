@@ -57,6 +57,8 @@ export default function CartNavigator({ count, className }) {
 
     const [showCart, setShowCart] = useState(false)
 
+    const closeCart = () => setShowCart(!showCart)
+
     const { cart, clearCart, addToCart, removeFromCart, subtractCart } = useCart()
 
 
@@ -97,7 +99,8 @@ export default function CartNavigator({ count, className }) {
                             <TbShoppingCartX className='w-10 h-10 bg-slate-800 p-2 rounded-lg' />
                         </button>
                         <Link
-                            to='/cart' className='rounded bg-slate-400 px-2 mt-3 font-semibold'>
+                            to='/cart' className='rounded bg-slate-400 px-2 mt-3 font-semibold'
+                            onClick={closeCart}>
                             Ir al Carrito
                         </Link>
                     </div>
