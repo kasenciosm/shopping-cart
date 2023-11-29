@@ -12,7 +12,7 @@ function Home() {
 
   return (
     <>
-      <section className="flex justify-center bg-[url('./public/imagen/brand-socks.jpeg')] p-4">
+      <section className="flex justify-center bg-sky-100 p-4">
         <Slider />
       </section>
       <div className="xl:px-10 px-2">

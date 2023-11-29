@@ -27,7 +27,7 @@ function CartItems({ image, price, name, quantity, addToCart, removeFromCart, su
             <section className='flex lg:gap-10 sm:gap-12 items-center'>
                 <span className='text-xs'>
                 </span>
-                <div className='flex lg:flex-row flex-col gap-2 items-center text-sm pr-4'>
+                <div className='flex lg:flex-row flex-col-reverse gap-2 items-center text-sm pr-4'>
                     <button
                         onClick={subtractCart}
                     >

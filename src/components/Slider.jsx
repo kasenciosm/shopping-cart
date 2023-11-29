@@ -1,5 +1,6 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useState, useRef } from 'react'
 import { BiLeftArrow, BiRightArrow } from 'react-icons/bi';
+
 
 const featuredProducts = [
     "/imagen/retrosocks.jpeg",
@@ -8,53 +9,28 @@ const featuredProducts = [
 ]
 
 let count = 0
-let slideInterval
 
 function Slider() {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const slideRef = useRef()
 
-    const removeAnimation = () => {
-        slideRef.current.classList.remove('fade-anim')
-    }
-
-    useEffect(() => {
-        slideRef.current.addEventListener('animationend', removeAnimation)
-        slideRef.current.addEventListener('mouseenter', pauseSlider)
-        slideRef.current.addEventListener('mouseleave', startSlider)
-
-        startSlider()
-        return () => {
-            pauseSlider(slideInterval)
-        }
-    }, [])
-
-    const startSlider = () => {
-        slideInterval = setInterval(() => { handleOnNextClick() }, 3000)
-    }
-
-    const pauseSlider = () => {
-        clearInterval(slideInterval)
-    }
 
     const handleOnNextClick = () => {
         count = (count + 1) % featuredProducts.length
         setCurrentIndex(count)
-        slideRef.current.classList.add('fade-anim')
     }
     const handleOnPrevCLick = () => {
         const productsLength = featuredProducts.length
         count = (currentIndex + productsLength - 1) % productsLength
         setCurrentIndex(count)
-        slideRef.current.classList.add('fade-anim')
     }
 
 
 
     return (
-        <div ref={slideRef} className='w-3/4 select-none relative'>
-            <div className='aspect-w-16 aspect-h-5 ml-4 mr-4 transition'>
+        <div ref={slideRef} className='w-[75%] select-none relative shadow-xl transition ease-in-out'>
+            <div className='aspect-w-14 aspect-h-8 ml-2 mr-1 transition' >
                 <img src={featuredProducts[currentIndex]} alt='socks' />
             </div>
 

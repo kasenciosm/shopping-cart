@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
 import Footer from "../components/Footer"
-import { data } from "autoprefixer"
 import CartTotal from "../components/CartTotal"
 function Payment() {
 
@@ -54,10 +53,10 @@ function Payment() {
                                     <ul key={index}>
                                         <li className="grid lg:grid-cols-5 sm:grid-cols-1 sm:text-left sm:gap-1 gap-1 lg:text-center font-semibold p-6  border-b-4 sm:text-xs lg:text-sm"
                                         >
-                                            <img className="w-10 items-center ml-12" src={product.image} />
+                                            <img className="w-10 flex ml-14" src={product.image} />
                                             <p className="text-center">{product.name}</p>
                                             <p className="text-center">{product.quantity}</p>
-                                            <p className="text-center">S/.{product.price} </p>
+                                            <p className="text-center lg:flex sm:hidden hidden">S/.{product.price} </p>
                                             <p className="text-center">S/.{product.quantity * product.price}</p>
                                         </li>
                                     </ul>
@@ -66,7 +65,7 @@ function Payment() {
                                 <div className="">
                                     <CartTotal />
                                 </div>
-                                <div className="flex justify-end text-right mt-6 p-4">
+                                <div className="flex justify-center text-right mt-6 p-4">
                                     <button className="bg-yellow-400 p-2 text-xs font-semibold"
                                         onClick={payment}>EFECTUAR EL PAGO</button>
                                 </div>
