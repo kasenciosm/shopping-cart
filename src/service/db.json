@@ -1,0 +1,147 @@
+{
+    "products": [
+        {
+            "id": 65,
+            "name": "Zombie Socks",
+            "description": "Pies zombificados",
+            "price": 22.50,
+            "image": "https://i.postimg.cc/bvkKY6c9/random-socks.jpg",
+            "category": {
+                "id": 5,
+                "name": "random"
+            }
+        },
+        {
+            "id": 66,
+            "name": "Calamardo",
+            "description": "Calamardo con el gesto de siempre",
+            "price": 24.90,
+            "image": "https://i.postimg.cc/52HhT4sG/calamardo-socks.jpg",
+            "category": {
+                "id": 4,
+                "name": "caricaturas"
+            }
+        },
+        {
+            "id": 67,
+            "name": "Charlie Brown",
+            "description": "Charlie Brown con franjas amarillo y negro ",
+            "price": 36.00,
+            "image": "https://i.postimg.cc/9M2sDGc5/charlie-socks.jpg",
+            "category": {
+                "id": 4,
+                "name": "caricaturas"
+            }
+        },
+        {
+            "id": 68,
+            "name": "Green Socks",
+            "description": "Verde intenso con franjas blancas",
+            "price": 21.90,
+            "image": "https://i.postimg.cc/52ZhMhGt/clasic-green-socks.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        },
+        {
+            "id": 69,
+            "name": "Classic Socks",
+            "description": "Blancos clasicos con franjas rojo y azul",
+            "price": 35.90,
+            "image": "https://i.postimg.cc/VsD2NrTp/classic-socks.jpg",
+            "category": {
+                "id": 2,
+                "name": "clasicos"
+            }
+        },
+        {
+            "id": 70,
+            "name": "Orange Socks",
+            "description": "Naranja intenso con letras negras",
+            "price": 34.00,
+            "image": "https://i.postimg.cc/wMfr4ZLg/orange-text.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        },
+        {
+            "id": 71,
+            "name": "Sockete Orange",
+            "description": "Sockete sorprendido en fondo naranja intenso",
+            "price": 42.50,
+            "image": "https://i.postimg.cc/brNMTpGm/orange-face-socks.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        },
+        {
+            "id": 72,
+            "name": "Sockete Purple",
+            "description": "Sockete en su onda",
+            "price": 42.50,
+            "image": "https://i.postimg.cc/C14XkzKZ/purple-face-socks.jpg",
+            "category": {
+                "id": 5,
+                "name": "random"
+            }
+        },
+        {
+            "id": 73,
+            "name": "Retro Socks",
+            "description": "Blancas con franjas roja y azul, estilo 80's",
+            "price": 36.90,
+            "image": "https://i.postimg.cc/yYxt36Cd/retro-socks.jpg",
+            "category": {
+                "id": 2,
+                "name": "clasicos"
+            }
+        },
+        {
+            "id": 74,
+            "name": "Sockete",
+            "description": "El sockete de siempre",
+            "price": 48.00,
+            "image": "https://i.postimg.cc/ZqtMQrBB/sockete-socks.jpg",
+            "category": {
+                "id": 5,
+                "name": "random"
+            }
+        },
+        {
+            "id": 75,
+            "name": "Blancas sport",
+            "description": "Blancas con texto verde",
+            "price": 25.00,
+            "image": "https://i.postimg.cc/tg3MGYWr/white-socks.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        },
+        {
+            "id": 76,
+            "name": "Yellow sport",
+            "description": "Amarillas con texto azul",
+            "price": 25.90,
+            "image": "https://i.postimg.cc/tT9mqpz9/yellow-socks.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        },
+        {
+            "id": 77,
+            "name": "Brown Classic",
+            "description": "Marrones estilo formal",
+            "price": 28.90,
+            "image": "https://i.postimg.cc/SQ1gCP9d/brown-socks.jpg",
+            "category": {
+                "id": 3,
+                "name": "colores"
+            }
+        }
+    ]
+}
